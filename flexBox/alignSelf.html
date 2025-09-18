@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Align Self</title>
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 75px;
+    width: 75px;
+    border: 3px solid black;
+    margin-right: 5px;
+}
+#heading {margin-left: 50px;}
+#container {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+#box1 { background-color: aqua;}
+#box2 { background-color: blueviolet;}
+#box4 { background-color: hotpink;}
+#box3 { 
+    background-color: yellow;
+    align-self: center;
+}
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flexbox Container</h1>
+    <div id="container">
+        <div id="box1" class="box">Flex Item 1</div>
+        <div id="box2" class="box">Flex Item 2</div>
+        <div id="box3" class="box">Flex Item 3</div>
+        <div id="box4" class="box">Flex Item 4</div>
+    </div>
+</body>
+</html>
